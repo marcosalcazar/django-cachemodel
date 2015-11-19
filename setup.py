@@ -1,8 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-execfile(os.path.join(os.path.dirname(__file__), 'cachemodel/version.py'))
-
+exec(open(os.path.join(os.path.dirname(__file__), 'cachemodel/version.py'), "rb").read())
 
 setup(
     name='django-cachemodel',
